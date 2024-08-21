@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StartGame">
+   <children>
+      <HBox layoutX="406.0" layoutY="571.0" prefHeight="29.0" prefWidth="395.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="51.0" text="score:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel" prefHeight="25.0" prefWidth="77.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="54.0" text="FREEZE:" />
+            <AnchorPane>
+               <children>
+                  <ProgressBar fx:id="freezeBar" layoutY="6.0" prefHeight="18.0" prefWidth="182.0" progress="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Label fx:id="throwDegree" alignment="CENTER" layoutY="244.0" prefHeight="61.0" prefWidth="60.0" text="0">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Circle fill="WHITE" layoutX="48.0" layoutY="264.0" radius="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="16.0" layoutY="292.0" text="degrees">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="pauseIV" fitHeight="51.0" fitWidth="54.0" onMouseClicked="#pauseGame" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

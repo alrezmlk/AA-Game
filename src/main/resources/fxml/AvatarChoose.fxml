@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AvatarMenu">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="99.0" prefWidth="600.0">
+               <children>
+                  <ImageView fx:id="avatar" fitHeight="82.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="241.0" layoutY="46.0" prefHeight="40.0" prefWidth="262.0" text="please choose an avatar from below">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="username" layoutX="121.0" layoutY="47.0" prefHeight="38.0" prefWidth="120.0" text="username">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="125.0" prefWidth="600.0">
+               <children>
+                  <ImageView id="1" fitHeight="89.0" fitWidth="92.0" layoutX="64.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-01.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="2" fitHeight="89.0" fitWidth="92.0" layoutX="191.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-02.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="3" fitHeight="89.0" fitWidth="92.0" layoutX="318.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-03.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="4" fitHeight="89.0" fitWidth="92.0" layoutX="449.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-04.jpg" />
+                     </image>
+                  </ImageView>
+
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="128.0" prefWidth="600.0">
+               <children>
+                  <ImageView id="5" fitHeight="89.0" fitWidth="100.0" layoutX="113.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-05.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="6" fitHeight="89.0" fitWidth="100.0" layoutX="250.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-06.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView  id="7" fitHeight="89.0" fitWidth="92.0" layoutX="377.0" layoutY="14.0" onMouseClicked="#chooseAvatar" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/1-07.jpg"/>
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="62.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="513.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#backToProfileMenu" prefHeight="25.0" prefWidth="71.0" text="cancle" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
